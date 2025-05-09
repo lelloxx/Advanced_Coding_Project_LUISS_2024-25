@@ -77,7 +77,7 @@ By propagating reliable values across months for the same customer, we could fil
 
 ---
 
-### 3. **Removal of Anomalous Values - Outlier Removal**
+### 3. **Removal of Anomalous Values**
 
 This step was carried out almost in parallel with the imputation process. As previously mentioned, the dataset contained numerous anomalous values that were easy to identify and did not require advanced imputation methods. Most of these anomalies were clearly unrealistic—such as negative values for age or income, or abnormally high figures that deviated significantly from a customer's typical monthly data.
 Given the structure of the dataset, where each customer had multiple monthly entries, we could reasonably apply assumptions based on common sense and customer-specific trends. For instance, it is highly unlikely for a person’s income in a single month to spike to 10 times their average without explanation. Based on such logic, rows containing extreme or logically invalid values were removed to ensure data integrity and prevent distortion during modeling.
